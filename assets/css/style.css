@@ -1,0 +1,121 @@
+:root {
+    --color-background: #141414;
+    --color-container: hsl(0, 0%, 12%);
+    --color-text: #ffffff;
+    --color-subtext: var(--lemon-color);
+    --color-border: hsl(0, 0%, 20%);
+    --color-hover-bg: var(--lemon-color);
+    --color-hover-text: #141414;
+    --lemon-color: #c5f82a;
+    --footer-color:hsl(0, 0%, 25%);
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'inter-bold';
+    src: url("./../fonts/static/Inter-Bold.ttf");
+}
+@font-face {
+    font-family: 'inter-regular';
+    src: url("./../fonts/static/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: 'inter-semiBold';
+    src: url("./../fonts/static/Inter-SemiBold.ttf");
+}
+
+/*Global Resets*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: 'inter-bold';
+}
+img {
+    border-radius: 50%;
+}
+/**************************/
+body {
+    background-color: var(--color-background);
+    font-family: 'inter-regular', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    min-width: 360px;
+    padding: 32px;
+    margin: 25px auto;
+    background-color: var(--color-container);
+    border-radius: 8px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.img-container img {
+    width: 70px;
+}
+h1 {
+    font-size: 28px;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: 'inter-bold', sans-serif;
+}
+h2 {
+    font-size: 14px;
+    color: var(--color-subtext);
+    text-align: center;
+    margin-bottom: 19px;
+    font-family: 'inter-semiBold', sans-serif;
+}
+p {
+    font-size: 14px;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.links {
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+}
+.links a {
+    display: block;
+    width: 100%;
+    padding: 10px 50px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-border);
+    color: var(--color-text);
+    cursor: pointer;    
+    transition: all 0.2s ease-in-out;
+}
+.links a:hover {
+    background-color: var(--color-hover-bg);
+    color: var(--color-hover-text);
+}
+.attribution{
+    text-align: center;
+    color: var(--footer-color);
+}
+.attribution a {
+    font-size: 12px;
+    color: var(--color-text);
+    margin: 0 10px;
+}
